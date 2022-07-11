@@ -1,0 +1,5 @@
+datasource:
+  host: 127.0.0.1:3306
+  schema: go_shopper
+  user: root
+  pwd: Buzzr@123

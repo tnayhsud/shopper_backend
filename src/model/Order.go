@@ -12,7 +12,7 @@ import (
 type Order struct {
 	ID         uint        `gorm:"primarykey" json:"id"`
 	UserID     uint        `json:"userId"`
-	OrderItems []OrderItem `gorm:"ForeignKey:OrderID" json:"orderItems"`
+	OrderItems []OrderItem `gorm:"foreignKey:OrderID" json:"orderItems"`
 	PaymentID  uint        `json:"paymentId"`
 	AddressID  uint        `json:"addressId"`
 	CreatedAt  time.Time   `gorm:"autoCreateTime" json:"createdAt"`

@@ -101,7 +101,7 @@ func Viber(w http.ResponseWriter, r *http.Request) {
 	case "delivered":
 		// log.Println("transported to the subscriber | IZkeUOZm7xPCZlVnlHRvGw==")
 	case "seen":
-		log.Println("subscriber acknowldeged transported data | IZkeUOZm7xPCZlVnlHRvGw==")
+		log.Println("subscriber acknowldeged transported the data | IZkeUOZm7xPCZlVnlHRvGw==")
 	default:
 		log.Println(res)
 	}

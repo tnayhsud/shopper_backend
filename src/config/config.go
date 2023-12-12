@@ -12,7 +12,7 @@ type contextKey uint
 const UserKey contextKey = 0
 
 func init() {
-	viper.SetConfigName("config")
+	viper.SetConfigName("config-dev")
 	viper.AddConfigPath("src/config")
 	if err := viper.ReadInConfig(); err != nil {
 		if _, ok := err.(viper.ConfigFileNotFoundError); ok {
